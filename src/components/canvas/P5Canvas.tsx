@@ -3,7 +3,7 @@ import { P5CanvasInstance, ReactP5Wrapper } from 'react-p5-wrapper'
 
 function sketch(p5: P5CanvasInstance) {
   p5.setup = () => p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL)
-
+  p5.windowResized = () => p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
   p5.draw = () => {
     p5.orbitControl()
     p5.background(250)

@@ -13,7 +13,12 @@ const P5Canvas = dynamic(() => import('@/components/canvas/P5Canvas'), {
 export default function Page(props) {
   return (
     <>
-      <div className='text-black'>react.p5</div>
+      <div className=' w-full bg-black fixed top-0'>
+        <div className='text-white  animate-wiggle'>react.p5 + Next.js + TypeScript</div>
+      </div>
+      <div className=' w-full  bg-black fixed bottom-0'>
+        <div className='text-white py-1 text-xs text-center'>gh repo clone designerSejinOH/react-p5</div>
+      </div>
       <P5Canvas />
     </>
   )
