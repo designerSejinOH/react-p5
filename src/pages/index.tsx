@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
-import Instructions from '@/components/dom/Instructions'
 
-const P5Canvasss = dynamic(() => import('@/components/canvas/P5Canvas'), {
+const P5Canvas = dynamic(() => import('@/components/canvas/P5Canvas'), {
   ssr: false,
 })
 
@@ -14,14 +13,11 @@ const P5Canvasss = dynamic(() => import('@/components/canvas/P5Canvas'), {
 export default function Page(props) {
   return (
     <>
-      <Instructions>
-        <div className='text-white'>react.p5</div>
-      </Instructions>
+      <div className='text-black'>react.p5</div>
+      <P5Canvas />
     </>
   )
 }
-
-Page.canvas = (props) => <P5Canvasss />
 
 export async function getStaticProps() {
   return { props: { title: 'Index' } }

@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReactP5Wrapper } from 'react-p5-wrapper'
+import { P5CanvasInstance, ReactP5Wrapper } from 'react-p5-wrapper'
 
-function sketch(p5) {
+function sketch(p5: P5CanvasInstance) {
   p5.setup = () => p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL)
 
   p5.draw = () => {
