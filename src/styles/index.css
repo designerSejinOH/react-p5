@@ -6,7 +6,7 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body,
   #__next {
@@ -16,4 +16,9 @@
     padding: 0;
     overflow: hidden;
   }
+
+  canvas {
+    display: block;
+  }
+
 }
