@@ -1,3 +1,4 @@
+import Layout from '@/components/dom/Layout'
 import dynamic from 'next/dynamic'
 
 const P5Canvas = dynamic(() => import('@/components/canvas/P5Canvas'), {
@@ -13,13 +14,15 @@ const P5Canvas = dynamic(() => import('@/components/canvas/P5Canvas'), {
 export default function Page(props) {
   return (
     <>
-      <div className=' w-full bg-black fixed top-0'>
-        <div className='text-white  animate-wiggle'>react.p5 + Next.js + TypeScript</div>
-      </div>
-      <div className=' w-full  bg-black fixed bottom-0'>
-        <div className='text-white py-1 text-xs text-center'>gh repo clone designerSejinOH/react-p5</div>
-      </div>
-      <P5Canvas />
+      <Layout>
+        <div className='fixed top-0 w-full bg-black'>
+          <div className='text-white  animate-wiggle'>react.p5 + Next.js + TypeScript</div>
+        </div>
+        <P5Canvas />
+        <div className='fixed bottom-0 w-full bg-black'>
+          <div className='py-1 text-xs text-center text-white'>gh repo clone designerSejinOH/react-p5</div>
+        </div>
+      </Layout>
     </>
   )
 }
