@@ -1,10 +1,9 @@
 {
-  "name": "react-three-next",
+  "name": "react-p5-next",
   "version": "2.0.0",
   "authors": [
-    "Renaud ROHLINGER <https://twitter.com/onirenaud>"
+    "Sejin OH <https://instagram.com/ohsj1999>"
   ],
-  "license": "MIT",
   "private": true,
   "engines": {
     "node": ">=14"
