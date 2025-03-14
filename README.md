@@ -38,4 +38,4 @@ git clone https://github.com/designerSejinOH/react-p5.git
 
 ### Maintainers :
 
-- [`Instagram DM ❤️‍🔥 @ohsj1999`](https://www.instagram.com/ohsj1999)
+- [`Instagram DM ❤️‍🔥 @ohsejiin`](https://www.instagram.com/ohsejiin)
